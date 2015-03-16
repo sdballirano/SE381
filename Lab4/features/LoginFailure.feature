@@ -4,5 +4,6 @@ Scenario: If the user enters an unacceptable username and password, the applicat
 Given I have entered incorrect username
 And I have entered an incorrect password
 Then the login page should show an error
+And I am not an authenticated user
 
 

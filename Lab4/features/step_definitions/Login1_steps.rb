@@ -1,16 +1,27 @@
-Given(/^I have the username$/) do                                                                                                                                                                                                             
-  pending # express the regexp above with the code you wish you had                                                                                                                                                                           
-end                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                              
-Given(/^I have the proper password$/) do                                                                                                                                                                                                      
-  pending # express the regexp above with the code you wish you had                                                                                                                                                                           
-end                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                              
-When(/^I type them in to the boxes$/) do                                                                                                                                                                                                      
-  pending # express the regexp above with the code you wish you had                                                                                                                                                                           
-end   
+class User
+	def username
+		@username or raise("No User")
+	end
+		def password
+			@password or raise("No Password")
+		end
+			def authenticated
+				@authenticated
+			end
+				def notAuthenticated
+					@notAuthenticated
+				end
+  end
 
-When(/^I click the login button$/) do                                                                                                                                                                                                         
+Given(/^I enter the username "(.*?)"$/) do |user|                                                                                                                                                                                             
+pending # express the regexp above with the code you wish you had  
+end                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                              
+Given(/^I enter the password "(.*?)"$/) do |password|                                                                                                                                                                                             
+  pending # express the regexp above with the code you wish you had                                                                                                                                                                           
+end                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                              
+Given(/^I click the login button$/) do                                                                                                                                                                                                        
   pending # express the regexp above with the code you wish you had                                                                                                                                                                           
 end                                                                                                                                                                                                                                           
                                                                                                                                                                                                                                               
@@ -18,58 +29,14 @@ Then(/^I should be allowed to the homepage$/) do
   pending # express the regexp above with the code you wish you had                                                                                                                                                                           
 end                                                                                                                                                                                                                                           
                                                                                                                                                                                                                                               
-Given(/^I have the wrong username and password$/) do                                                                                                                                                                                          
+Then(/^I should be an authenticatd user$/) do                                                                                                                                                                                                 
   pending # express the regexp above with the code you wish you had                                                                                                                                                                           
 end                                                                                                                                                                                                                                           
                                                                                                                                                                                                                                               
-When(/^I enter them into the boxes$/) do                                                                                                                                                                                                      
+Then(/^I should be see an error$/) do                                                                                                                                                                                                         
   pending # express the regexp above with the code you wish you had                                                                                                                                                                           
 end                                                                                                                                                                                                                                           
                                                                                                                                                                                                                                               
-Then(/^I should get an error stating my username or password was incorrect$/) do                                                                                                                                                              
-  pending # express the regexp above with the code you wish you had                                                                                                                                                                           
-end                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                              
-Then(/^I must try again before proceeding$/) do                                                                                                                                                                                               
-  pending # express the regexp above with the code you wish you had                                                                                                                                                                           
-end                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                              
-Given(/^I am not logged in$/) do                                                                                                                                                                                                              
-  pending # express the regexp above with the code you wish you had                                                                                                                                                                           
-end                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                              
-When(/^I enter my username$/) do                                                                                                                                                                                                              
-  pending # express the regexp above with the code you wish you had                                                                                                                                                                           
-end                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                              
-Then(/^I enter my password$/) do                                                                                                                                                                                                              
-  pending # express the regexp above with the code you wish you had                                                                                                                                                                           
-end                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                              
-Then(/^the website should take me to the home page$/) do                                                                                                                                                                                      
-  pending # express the regexp above with the code you wish you had                                                                                                                                                                           
-end                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                              
-Given(/^I enter the correct credentials$/) do                                                                                                                                                                                                 
-  pending # express the regexp above with the code you wish you had                                                                                                                                                                           
-end                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                              
-Then(/^I am currently logged in$/) do                                                                                                                                                                                                         
-  pending # express the regexp above with the code you wish you had                                                                                                                                                                           
-end                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                              
-Then(/^I should be on the homepage$/) do                                                                                                                                                                                                      
-  pending # express the regexp above with the code you wish you had                                                                                                                                                                           
-end
-
-Given(/^I have entered incorrect username$/) do                                                                                                                                                                                               
-  pending # express the regexp above with the code you wish you had                                                                                                                                                                           
-end                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                              
-Given(/^I have entered an incorrect password$/) do                                                                                                                                                                                            
-  pending # express the regexp above with the code you wish you had                                                                                                                                                                           
-end   
-
-Then(/^the login page should show an error$/) do                                                                                                                                                                                              
+Then(/^I should not be an authenticatd user$/) do                                                                                                                                                                                             
   pending # express the regexp above with the code you wish you had                                                                                                                                                                           
 end   
